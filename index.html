@@ -22,35 +22,43 @@
 <body>
 
   <!-- HEADER -->
-  <header>
+  <!-- HEADER -->
+<header>
 
-    <div class="container hero">
+  <div class="container hero">
 
-      <div class="hero-text">
+    <div class="hero-text">
 
-        <h1>Rishi Kumar Sharma</h1>
+      <h1>Rishi Sharma</h1>
 
-        <h2>ERP Consultant | Project Coordinator | DevOps Engg.</h2>
+      <h2>
+        I am <span class="typing"></span>
+      </h2>
 
-        <p>
-          Professional portfolio website showcasing skills,
-          projects, experience and resume.
-        </p>
+      <p>
+        Professional portfolio website showcasing skills,
+        projects, experience and resume.
+      </p>
 
-        <div class="buttons">
-          <a href="#" class="btn">Download CV</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-        </div>
+      <div class="buttons">
+        <a href="resume.pdf" class="btn" download>
+          Download CV
+        </a>
 
-      </div>
-
-      <div class="hero-image">
-        <img src="images/myphoto.jpg" alt="Profile">
+        <a href="#contact" class="btn btn-outline">
+          Contact Me
+        </a>
       </div>
 
     </div>
 
-  </header>
+    <div class="hero-image">
+      <img src="images/myphoto.jpg" alt="Profile">
+    </div>
+
+  </div>
+
+</header>
 
   <!-- ABOUT -->
   <section class="section">
@@ -175,6 +183,61 @@
     </div>
 
   </section>
+
+<script>
+
+const roles = [
+  "ERP Consultant",
+  "Project Coordinator",
+  "DevOps Engg."
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let currentRole = "";
+let isDeleting = false;
+
+const typingElement = document.querySelector(".typing");
+
+function typeEffect() {
+
+  currentRole = roles[roleIndex];
+
+  if (!isDeleting) {
+    typingElement.textContent =
+      currentRole.substring(0, charIndex + 1);
+
+    charIndex++;
+
+    if (charIndex === currentRole.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1500);
+      return;
+    }
+
+  } else {
+
+    typingElement.textContent =
+      currentRole.substring(0, charIndex - 1);
+
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      roleIndex++;
+
+      if (roleIndex === roles.length) {
+        roleIndex = 0;
+      }
+    }
+  }
+
+  setTimeout(typeEffect, isDeleting ? 60 : 120);
+}
+
+typeEffect();
+
+</script>
 
   <!-- FOOTER -->
   <footer>
