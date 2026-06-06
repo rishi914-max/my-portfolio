@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Rishi Sharma | Portfolio</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
+ 
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -19,32 +22,71 @@
 
 </head>
 
+
 <body>
 
+  <header class="navbar">
+
+  <div class="logo">
+    <!-- <a href="#">
+  ♉
+</a> -->
+    Rishi Kumar Sharma
+  </div>
+
+  <nav>
+    <a href="index.html">
+      <i class="fas fa-home"></i> Home
+    </a>
+
+    <a href="career.html">
+      <i class="fas fa-briefcase"></i> Career Journey
+    </a>
+
+    <a href="projects.html">
+      <i class="fas fa-diagram-project"></i> Projects
+    </a>
+
+    <a href="index.html#contact">
+      <i class="fas fa-envelope"></i> Contact
+    </a>
+  </nav>
+
+</header>
+
+
   <!-- HEADER -->
-  <!-- HEADER -->
-<header>
+
+<header class="hero-header">
 
   <div class="container hero">
 
     <div class="hero-text">
 
-      <h1>Rishi Sharma</h1>
+      <h1>Rishi Kumar Sharma</h1>
 
       <h2>
         I am <span class="typing"></span>
       </h2>
 
       <p>
-        Professional portfolio website showcasing skills,
-        projects, experience and resume.
+        Seeking to contribute strategic leadership and technical project management expertise to drive digital transformation and scalable business solutions.
       </p>
 
       <div class="buttons">
-        <a href="resume.pdf" class="btn" download>
+        <a href="rishi_kumar_sharma.pdf" class="btn btn-outline" download>
           Download CV
         </a>
+<!-- LINKEDIN -->
 
+  <a href="https://www.linkedin.com/in/rishi-kumar-sharma-6b786911"
+     class="btn btn-outline"
+     target="_blank">
+
+    <i class="fab fa-linkedin-in"></i>
+    LinkedIn
+
+  </a>
         <a href="#contact" class="btn btn-outline">
           Contact Me
         </a>
@@ -52,10 +94,19 @@
 
     </div>
 
-    <div class="hero-image">
-      <img src="images/myphoto.jpg" alt="Profile">
-    </div>
+       <div class="hero-image">
 
+  <div class="slider">
+
+    <img src="images/myphoto.jpeg" class="slide active">
+    <img src="images/myphoto1.jpeg" class="slide">
+    <img src="images/myphoto2.jpg" class="slide">
+    <img src="images/myphoto3.jpeg" class="slide">
+    <img src="images/myphoto4.jpg" class="slide">
+
+  </div>
+
+     </div>
   </div>
 
 </header>
@@ -66,41 +117,101 @@
     <div class="container">
 
       <h2 class="section-title">About Me</h2>
+     <ul>
+      <li class="about-text">
+        Seasoned Project Manager with 12+ years of experience in Telecom Network Operations,Service Delivery,
+        and cross-functional team leadership,successfully transitioning into Software and IT Project Management over the past 3 years.
+        Experienced in managing ERP and IT projects involving developers, QA teams, Agile Scrum practices, and business stakeholders.
+      </li>
+     
+      
+         <li class="about-text">
+          Strong expertise in stakeholder management, SLA-driven delivery, risk mitigation, operational planning, and process optimization, 
+          combined with hands-on exposure to Jira, Agile/Scrum methodologies, and DevOps fundamentals. Scrum Master (PSM-I) with 
+          proven ability to translate complex business and operational requirements into scalable technology solutions</li>
+      
 
-      <p class="about-text">
-        I help businesses with ERP systems, cloud hosting,
-        networking solutions and professional websites.
-        I specialize in modern web technologies and IT infrastructure.
-      </p>
+          <li class="about-text"> 
+            Demonstrated success in driving operational efficiency, coordinating cross-functional teams, 
+            and delivering technology-enabled transformation initiatives aligned with business objectives.</li>
 
+      </ul>
     </div>
-
   </section>
 
   <!-- SKILLS -->
-  <section class="section dark-section">
+<section class="section dark-section">
 
     <div class="container">
 
       <h2 class="section-title">Skills</h2>
 
-      <div class="skills">
+    <div class="skills">
 
-        <div class="card">ERP Solutions</div>
-        <div class="card">HTML / CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Cloud Hosting</div>
-        <div class="card">Networking</div>
-        <div class="card">Technical Support</div>
+      <div class="card">
+        <i class="fas fa-building"></i>
+        <span>ERP</span>
+      </div>
 
+      <div class="card">
+        <!-- <i class="fab fa-docker"></i> -->
+        <i class="fas fa-infinity"></i>
+        <span>DevOps</span>
+      </div>
+
+      <div class="card">
+        <i class="fa-brands fa-aws"></i>
+        <span>AWS</span>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-sync-alt"></i>
+        <span>Agile</span>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-cloud"></i>
+        <span>Cloud Hosting</span>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-network-wired"></i>
+        <span>Networking</span>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-users-cog"></i>
+        <span>Scrum Methodology</span>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-tasks"></i>
+        <span>Jira / Asana</span>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-user-friends"></i>
+        <span>Team Management</span>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-project-diagram"></i>
+        <span>Project Coordination</span>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-screwdriver-wrench"></i>
+        <span>Technical Support</span>
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
   <!-- PROJECTS -->
-  <section class="section">
+  <!-- <section class="section">
 
     <div class="container">
 
@@ -108,26 +219,651 @@
 
       <div class="projects">
 
-        <div class="project-card">
-          <h3>ERP Management System</h3>
-          <p>Business ERP setup and management solution.</p>
+               <div class="project-card">
+
+    <div class="project-top">
+        <i class="fas fa-building"></i>
+        <h3>ERP Management System</h3>
+    </div>
+
+    <p class="project-summary">
+        Led coordination and delivery support for an enterprise-wide ERP solution
+        designed to streamline business operations, centralize organizational data,
+        and improve collaboration across multiple departments.
+    </p>
+
+    <div class="project-tags">
+        <span>HRMS</span>
+        <span>Finance</span>
+        <span>Billing</span>
+        <span>SCM</span>
+        <span>Operations</span>
+        <span>Tender</span>
+        <span>Agile</span>
+    </div>
+
+    <div class="project-details">
+
+        <p>
+            <strong>Role:</strong> Project Coordinator / Scrum Coordinator
+        </p>
+
+        <p>
+            <strong>Responsibilities:</strong>
+            Requirement gathering, stakeholder coordination,
+            workflow documentation, process optimization,
+            sprint coordination, and implementation support.
+        </p>
+
+        <p>
+            <strong>Outcome:</strong>
+            Reduced manual processes, improved reporting accuracy,
+            and enhanced operational efficiency through centralized
+            digital workflows.
+        </p>
+
+    </div>
+
+</div>
+
+<div class="project-card">
+
+    <div class="project-top">
+        <i class="fas fa-building"></i>
+        <h3>ERP Management System</h3>
+    </div>
+
+    <p class="project-summary">
+        Led coordination and delivery support for an enterprise-wide ERP solution
+        designed to streamline business operations, centralize organizational data,
+        and improve collaboration across multiple departments.
+    </p>
+
+    <div class="project-tags">
+        <span>HRMS</span>
+        <span>Finance</span>
+        <span>Billing</span>
+        <span>SCM</span>
+        <span>Operations</span>
+        <span>Tender</span>
+        <span>Agile</span>
+    </div>
+
+    <div class="project-details">
+
+        <p>
+            <strong>Role:</strong> Project Coordinator / Scrum Coordinator
+        </p>
+
+        <p>
+            <strong>Responsibilities:</strong>
+            Requirement gathering, stakeholder coordination,
+            workflow documentation, process optimization,
+            sprint coordination, and implementation support.
+        </p>
+
+        <p>
+            <strong>Outcome:</strong>
+            Reduced manual processes, improved reporting accuracy,
+            and enhanced operational efficiency through centralized
+            digital workflows.
+        </p>
+
+    </div>
+
+</div>
+        
+
+      </div>
+      
+    </div>
+
+  </section> -->
+
+     <!-- Carrier Highlights -->
+    <section class="section">
+
+    <div class="container">
+
+      <h2 class="section-title">Carrer Highlights</h2>
+<!-- 
+      <div class="experience-item"> -->
+
+      <ul>
+        
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;  Awarded Vodafone IMAD (I Made A Difference) Award for outstanding 
+        contribution to network operations and service delivery excellence</li>
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;	Recognised as Best Zone Technical Manager (ZTM) for operational leadership, team management, and performance excellence.</li>
+
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;   	Successfully transitioned from Telecom Network Operations and Service Delivery into Software & IT Project Management.</li>
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;	 	Coordinated ERP, CRM, logistics, and web/mobile application projects using Agile Scrum methodologies and Jira workflow management.</li>
+
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;   	Drove collaboration across development, QA, vendor, and business teams for successful project outcomes.</li>
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;	 	Played a key role in requirement gathering, stakeholder communication, workflow planning, sprint coordination, and issue resolution activities.</li>
+
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;   	Contributed to process optimization, workflow automation, and digital transformation initiatives to improve operational efficiency and productivity.</li>
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;	 	Managed SLA-driven operations, escalation handling, risk mitigation, and service delivery coordination across multiple projects.</li>
+
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;   	Supported cloud hosting, deployment coordination, API-integrated platforms, and infrastructure-related operational activities.</li>
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;	 	Received multiple appreciation awards and recognitions for meeting project deadlines, operational targets, and maintaining service quality standards.</li>
+
+        
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;   	 	Participated in Kaizen process improvement initiatives and continuous operational enhancement programs.</li>
+        <li class="career-highlight"><i class="fas fa-star"></i>&nbsp;&nbsp;	 	 	Completed professional training in Height Safety & Rescue Operations, PPE/OHS Safety, First Aid, and Emergency Preparedness</li>
+
+     
+      </ul>
+     
+
+</div>
+</section>
+  
+
+<!-- AWARDS SECTION -->
+
+
+<section class="section dark-section">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Awards & Recognition
+    </h2>
+<div class="award-slider-container">
+
+    <!-- LEFT -->
+    <button class="award-btn prev-btn"
+            onclick="moveAwardSlide('awardSlider',-1)">
+        ❮
+    </button>
+
+    <!-- SLIDER -->
+    <div class="award-slider" id="awardSlider">
+
+
+  <!-- Kaizen -->
+        <div class="achievement-card">
+
+          <img src="images/Kaizen Certificate.jpeg"
+               alt="Award"
+               onclick="openPopup(
+               'images/Kaizen Certificate.jpeg',
+               'Participation Appreciation',
+               'Kaizen - Improving work practices.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Participation Appreciation</h3>
+
+            <p>
+              Kaizen - Improving work practices.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="project-card">
-          <h3>Company Website</h3>
-          <p>Professional responsive business website.</p>
+
+              <!-- I-Mad -->
+        <div class="achievement-card">
+
+          <img src="images/imad.jpeg"
+               alt="Award"
+               onclick="openPopup(
+               'images/imad.jpeg',
+               'Best Performance Award',
+               'Recognized for exceptional contribution to the network.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Best Performance Award</h3>
+
+            <p>
+              Recognized for exceptional contribution to the network.
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="project-card">
-          <h3>Cloud Hosting Setup</h3>
-          <p>Secure VPS hosting and deployment configuration.</p>
+        <!-- Telenor ZTM -->
+        <div class="achievement-card">
+
+          <img src="images/Uninor ZTM.jpeg"
+               alt="Award"
+               onclick="openPopup(
+               'images/Uninor ZTM.jpeg',
+               'Employee Excellence Recognition',
+               'Awarded for outstanding project delivery and operational efficiency.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Employee Excellence Recognition</h3>
+
+            <p>
+              Awarded for Outstanding Project Delivery and Operational Efficiency.
+            </p>
+
+          </div>
+
         </div>
+
+
+        <!-- Telenor 2-->
+        <div class="achievement-card">
+
+          <img src="images/award_3.jpeg"
+               alt="Award"
+               onclick="openPopup(
+               'images/award_3.jpeg',
+               'Appreciation Recognition',
+               'Appreciation for become a Part of Telenor Family.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Appreciation Recognition</h3>
+
+            <p>
+              Appreciation for become a Part of Telenor Family.
+            </p>
+
+          </div>
+
+              </div>
+
+        <!-- Nokia Praise-->
+        <div class="achievement-card">
+
+          <img src="images/Nokia Praise.jpeg"
+               alt="Award"
+               onclick="openPopup(
+               'images/Nokia Praise.jpeg',
+               'Service Excellence Recognition',
+               'Recognized and Praise for Quality Improvement and Operational Efficiency .'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Service Excellence Recognition</h3>
+
+            <p>
+              Recognized and Praise for Quality Improvement and Operational Efficiency.
+            </p>
+
+          </div>
+
+              </div>
+
+              <!-- Nokia Praise-->
+        <div class="achievement-card">
+
+          <img src="images/Nokia Award.jpeg"
+               alt="Award"
+               onclick="openPopup(
+               'images/Nokia Award.jpeg',
+               'Service Excellence Recognition',
+               'Recognized for Exceptional Contribution to the Network.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Service Excellence Recognition</h3>
+
+            <p>
+              Recognized for Exceptional Contribution to the Network.
+            </p>
+
+          </div>
+
+        </div>
+
+      <!-- Strive Mindz 1-->
+        <div class="achievement-card">
+
+          <img src="images/SM Award_3.jpeg"
+               alt="Award"
+               onclick="openPopup(
+               'images/SM Award_3.jpeg',
+               'Leadership Recognition',
+               'Recognized for Agile leadership and successful project execution.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Leadership Recognition</h3>
+
+            <p>
+              Recognized for Agile leadership and successful project execution.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <!-- Strive Mindz 1-->
+        <div class="achievement-card">
+
+          <img src="images/SM Award_1.jpeg"
+               alt="Award"
+               onclick="openPopup(
+               'images/SM Award_1.jpeg',
+               'Leadership Recognition',
+               'Recognized for Agile leadership and successful project execution.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Leadership Recognition</h3>
+
+            <p>
+              Recognized for Agile leadership and successful project execution.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+    <button class="award-btn next-btn"
+            onclick="moveAwardSlide('awardSlider',1)">
+        ❯
+    </button>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
+
+
+
+<!-- CERTIFICATES SECTION -->
+
+<section class="section">
+
+  <div class="container">
+
+    <h2 class="section-title">
+      Trainings & Learning Certifications
+    </h2>
+
+    <div class="container">
+
+      <!-- <h2 class="section-title">Carrer Highlights</h2> -->
+<!-- 
+      <div class="experience-item"> -->
+
+      <ul>
+        
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;  DevOps Engineer Course Completion Certificate</li>
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;  Professional Scrum Master (PSM- I) Course Completion Certificate</li>
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;	CCNA Training – NSN.</li>
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;  MPLS Network Training</li>
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;	Nokia 2G Marshal Operations & Maintenance</li>
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;  NEC Transmission Equipment Maintenance Training – NSN.</li>
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;	BSC & BTS Maintenance and Alarm Rectification – NSN.</li>
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;  Core OHS Training.</li>
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;	CBTHR Training.</li>
+        <li class="career-highlight"><img src="images/certificate_icon.png" alt="Certificate Logo" class="certificate-logo">&nbsp;&nbsp;  First Aid Training.</li>
+            
+      </ul>
+     
+
+</div>
+
+    <div class="award-slider-container">
+
+      <!-- LEFT BUTTON -->
+      <button class="award-btn prev-btn"
+              onclick="moveAwardSlide('certificateSlider',-1)">
+        ❮
+      </button>
+
+      <!-- SLIDER -->
+      <div class="award-slider" id="certificateSlider">
+
+        <!-- DevOps -->
+        <div class="achievement-card">
+
+          <img src="images/Certificate.jpeg"
+               onclick="openPopup(
+               'images/Certificate.jpeg',
+               'DevOps Engineer Course Complition Certification',
+               'Certified in Linux server management, Cloude hosting, and Deployment Automation.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>DevOps Engineer</h3>
+
+            <p>
+              Cloude hosting & Deployment Automation.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- AWS -->
+        <div class="achievement-card">
+
+          <img src="images/Certificate1.jpeg"
+               onclick="openPopup(
+               'images/Certificate1.jpeg',
+               'Cloud Hosting Certification',
+               'AWS Server & Cloud Deployment using IAM, EC2, SG, EBS Volume S3, VPC, Elastic Load Balance, RDS, Route53.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>VPC Hosting</h3>
+
+            <p>
+              Certified in AWS cloud Services Management.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- Docker -->
+        <div class="achievement-card">
+
+          <img src="images/Certificate2.jpeg"
+               onclick="openPopup(
+               'images/Certificate2.jpeg',
+               'Docker Essential Certification',
+               'Certified in Docker containerization and deployment.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Docker Essential</h3>
+
+            <p>
+              Docker container management Learning.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- K8B -->
+        <div class="achievement-card">
+
+          <img src="images/Certificate3.jpeg"
+               onclick="openPopup(
+               'images/Certificate3.jpeg',
+               'Kubernetes Certification',
+               'Certified in scalable web application deployment using Kubernetes.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Kubernetes</h3>
+
+            <p>
+              Scalable app deployment learning.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- PSM-1 -->
+        <div class="achievement-card">
+
+          <img src="images/Certificate4.jpeg"
+               onclick="openPopup(
+               'images/Certificate4.jpeg',
+               'Professional Scrum Master™ (PSM-I)',
+               'Professional Scrum Master™ (PSM-I) course complition certification.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>Professional Scrum Master<sup>TM</sup> (PSM-I)</h3>
+
+            <p>
+              Agile & Scrum methodologies Learning.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- MPLS -->
+        <div class="achievement-card">
+
+          <img src="images/MPLS Training Certificate_1.jpeg"
+               onclick="openPopup(
+               'images/MPLS Training Certificate_1.jpeg',
+               'MPLS Training Certification',
+               'Certified in MPLS Technology fundamentals.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>MPLS Training Certification</h3>
+
+            <p>
+              MPLS Technology fundamentals.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- 2G Marshal -->
+        <div class="achievement-card">
+
+          <img src="images/2G Marshal Certificate.jpeg"
+               onclick="openPopup(
+               'images/2G Marshal Certificate.jpeg',
+               '2G-Marshal Certification',
+               'Certified in Radio Access advance level technical expertise.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>2G-Marshal Certification</h3>
+
+            <p>
+              Certified in Radio Access advance level technical expertise.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- First Aid Training -->
+        <div class="achievement-card">
+
+          <img src="images/First Aid_2.jpeg"
+               onclick="openPopup(
+               'images/First Aid_2.jpeg',
+               'First Aid Training Certification',
+               'Certified in First Aid Emergency & Preparedness Training.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>First Aid Training Certification</h3>
+
+            <p>
+              Certified in First Aid Emergency & Preparedness Training.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!-- CBTHR -->
+        <div class="achievement-card">
+
+          <img src="images/CBTHR Traing Certificate.jpeg"
+               onclick="openPopup(
+               'images/CBTHR Traing Certificate.jpeg',
+               'CBTHR Training Certification',
+               'Certified in Contractor Basic Training for Height & Rescue.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>CBTHR Training Certification</h3>
+
+            <p>
+              Certified in Contractor Basic Training for Height & Rescue.
+            </p>
+
+          </div>
+
+        </div>
+
+        <!--OHS -->
+        <div class="achievement-card">
+
+          <img src="images/OHS Training Certificate.jpeg"
+               onclick="openPopup(
+               'images/OHS Training Certificate.jpeg',
+               'OHS Training Certificate',
+               'Certified in Core Occpational Health & Safty(OHS) Training Certification.'
+               )">
+
+          <div class="achievement-content">
+
+            <h3>OHS Training Certification</h3>
+
+            <p>
+              Certified in OHS Training Certification.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT BUTTON -->
+      <button class="award-btn next-btn"
+              onclick="moveAwardSlide('certificateSlider',1)">
+        ❯
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
 
   <!-- CONTACT -->
   <section class="section dark-section" id="contact">
@@ -137,9 +873,9 @@
       <h2 class="section-title">Contact</h2>
 
       <div class="contact-box">
-
-        <p>Email: energetic.rishi28@gmail.com</p>
-        <p>Phone: +91 72339 52059</p>
+          
+        <p> <i class="fas fa-envelope" style="color:#D4AF37";></i> &nbsp;&nbsp; energetic.rishi28@gmail.com</p>
+        <p> <i class="fas fa-mobile-screen-button" style="color:#D4AF37";></i> &nbsp;&nbsp;Phone: +91&nbsp;&nbsp;7233952059&nbsp;/&nbsp;9151116285</p>
 
         <!-- SOCIAL ICONS -->
         <div class="socials">
@@ -152,15 +888,15 @@
             <i class="fab fa-github"></i>
           </a>
 
-          <a href="https://instagram.com/energetic.rishi28" target="_blank">
+          <!-- <a href="https://instagram.com/energetic.rishi28" target="_blank">
             <i class="fab fa-instagram"></i>
-          </a>
+          </a> -->
 
-          <a href="https://facebook.com/energetic.rishi28" target="_blank">
+          <!-- <a href="https://facebook.com/energetic.rishi28" target="_blank">
             <i class="fab fa-facebook-f"></i>
-          </a>
+          </a> -->
 
-          <a href="https://twitter.com/@Rishi_KSharma" target="_blank">
+          <!-- <a href="https://twitter.com/@Rishi_KSharma" target="_blank">
             <i class="fab fa-x-twitter"></i>
           </a>
 
@@ -170,7 +906,7 @@
 
           <a href="https://t.me/rishi_k_sharma" target="_blank">
             <i class="fab fa-telegram"></i>
-          </a>
+          </a> -->
 
           <a href="https://wa.me/917233952059" target="_blank">
             <i class="fab fa-whatsapp"></i>
@@ -187,10 +923,11 @@
 <script>
 
 const roles = [
-  "ERP Consultant",
-  "Project Coordinator",
-  "DevOps Engg."
+  "Agile Scrum Coordinator",
+  "Project Manager -IT",
+  "DevOps Engineer."
 ];
+
 
 let roleIndex = 0;
 let charIndex = 0;
@@ -237,13 +974,109 @@ function typeEffect() {
 
 typeEffect();
 
+
 </script>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Rishi Sharma. All Rights Reserved.</p>
+    <p>© 2026 Rishi Kumar Sharma. All Rights Reserved.</p>
   </footer>
+<script>
 
+const slides = document.querySelectorAll(".slide");
+
+let currentSlide = 0;
+
+function showSlide(){
+
+  slides.forEach(slide => {
+    slide.classList.remove("active");
+  });
+
+  currentSlide++;
+
+  if(currentSlide >= slides.length){
+    currentSlide = 0;
+  }
+
+  slides[currentSlide].classList.add("active");
+}
+
+setInterval(showSlide, 3000);
+
+</script>
+<!-- POPUP -->
+
+<div class="award-popup" id="popup">
+
+  <div class="award-popup-content">
+
+    <span class="close-popup"
+          onclick="closePopup()">
+      &times;
+    </span>
+
+    <img id="popupImg">
+
+    <h3 id="popupTitle"></h3>
+
+    <p id="popupDesc"></p>
+
+  </div>
+
+</div>
+
+<script>
+
+/* ========================= */
+/* SLIDER */
+/* ========================= */
+
+function moveAwardSlide(sliderId, direction){
+
+  const slider = document.getElementById(sliderId);
+
+  slider.scrollLeft += direction * 320;
+
+}
+
+/* ========================= */
+/* POPUP */
+/* ========================= */
+
+function openPopup(img,title,desc){
+
+  document.getElementById("popup").style.display = "flex";
+
+  document.getElementById("popupImg").src = img;
+
+  document.getElementById("popupTitle").innerText = title;
+
+  document.getElementById("popupDesc").innerText = desc;
+
+}
+
+function closePopup(){
+
+  document.getElementById("popup").style.display = "none";
+
+}
+
+/* CLOSE POPUP OUTSIDE CLICK */
+
+window.onclick = function(event){
+
+  const popup = document.getElementById("popup");
+
+  if(event.target == popup){
+
+    popup.style.display = "none";
+
+  }
+
+}
+
+</script>
 </body>
 
 </html>
