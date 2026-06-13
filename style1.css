@@ -252,17 +252,12 @@ body{
   background:var(--white);
   border-radius:18px;
   padding:20px;
-
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
-
   gap:10px;
-
-  box-shadow:
-  0 8px 25px rgba(0,0,0,.08);
-
+  box-shadow:  0 8px 25px rgba(0,0,0,.08);
   transition:.3s;
 }
 
@@ -274,13 +269,12 @@ body{
 .card span{
   color:var(--text);
   font-weight:600;
+  text-align: center;
 }
 
 .card:hover{
   transform:translateY(-8px);
-
-  box-shadow:
-  0 15px 35px rgba(212,175,55,.25);
+  box-shadow:0 15px 35px rgba(212,175,55,.25);
 }
 
 /* =========================
