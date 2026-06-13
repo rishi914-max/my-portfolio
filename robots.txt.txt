@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rishi-kumar-sharma.vercel.app/sitemap.xml
