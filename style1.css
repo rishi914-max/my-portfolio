@@ -841,7 +841,7 @@ nav a {
 
 .projects-page {
   background: #0F172A;
-  padding: 25px 0;
+  padding: 50px 0;
   color: #fff;
 }
 
@@ -1110,7 +1110,7 @@ h4 {
 
 .career-hero-ultra{
   position:relative;
-  min-height:100vh;
+  min-height:70vh;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -1553,8 +1553,8 @@ h4 {
   }
 
   .navbar nav a{
-    padding: 4px 8px;
-    font-size: 8px;
+    padding: 8px 10px;
+    font-size: 13px;
   }
 
   /* Hero Section */
@@ -1825,4 +1825,409 @@ h4 {
 .career-summary h3 i{
     color: var(--gold);
     margin-right: 10px;
+}
+
+.profile-banner{
+    width:100%;
+    max-width:1200px;
+    margin:20px auto;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.profile-banner img{
+    width:100%;
+    height: 340px;
+    display:block;
+    object-fit:contain;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .profile-banner{
+        margin:10px;
+        border-radius:12px;
+    }
+
+    .profile-banner img{
+        height:120px;
+        object-fit:contain;
+        object-position:center;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE OPTIMIZATION
+===================================== */
+
+@media (max-width:768px){
+
+  /* Global */
+  body{
+    overflow-x:hidden;
+  }
+
+  .container{
+    width:95%;
+    padding:0 10px;
+  }
+
+  /* Page Headers */
+
+  .page-title{
+    font-size:28px;
+    line-height:1.3;
+  }
+
+  .page-subtitle{
+    font-size:14px;
+    line-height:1.8;
+    padding:0 10px;
+  }
+
+  .projects-subtitle{
+    font-size:22px;
+    text-align:center;
+    line-height:1.4;
+  }
+
+  .projects-subtext{
+    font-size:14px;
+    line-height:1.8;
+    text-align:center;
+    padding:0 10px;
+  }
+
+  /* Project Cards */
+
+  .projects-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .project-detail-card{
+    padding:18px;
+    border-radius:14px;
+  }
+
+  .project-header{
+    flex-direction:column;
+    text-align:center;
+    gap:10px;
+  }
+
+  .project-icon{
+    font-size:32px;
+  }
+
+  .project-header h2{
+    font-size:20px;
+  }
+
+  .project-header span{
+    font-size:13px;
+  }
+
+  .project-summary{
+    font-size:14px;
+    line-height:1.8;
+  }
+
+  .project-detail-card ul{
+    padding-left:18px;
+  }
+
+  .project-detail-card{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+  .project-detail-card li{
+    font-size:14px;
+    line-height:1.7;
+  }
+
+  h4{
+    font-size:16px;
+  }
+
+  /* Metrics */
+
+  .project-metrics{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  .metric{
+    padding:12px;
+    text-align:center;
+  }
+
+  .metric h3{
+    font-size:18px;
+  }
+
+  .metric span{
+    font-size:12px;
+  }
+
+  /* Tech Stack */
+
+  .tech-stack{
+    justify-content:center;
+  }
+
+  .tech-stack span{
+    font-size:11px;
+    padding:6px 10px;
+  }
+
+  /* Career Page */
+
+  .career-hero-ultra{
+    min-height:auto;
+    padding:80px 15px 40px;
+    text-align:center;
+  }
+
+  .career-hero-content h1{
+    font-size:32px;
+    line-height:1.3;
+  }
+
+  .career-hero-content h2{
+    font-size:18px;
+    line-height:1.6;
+  }
+
+  .hero-stats{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+  .hero-stats div{
+    padding:15px;
+  }
+
+  .hero-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .hero-buttons a{
+    width:100%;
+    text-align:center;
+  }
+
+  /* Timeline */
+
+  .experience-item{
+    padding:16px;
+  }
+
+  .experience-item h3{
+    font-size:18px;
+  }
+
+  .experience-item h4{
+    font-size:14px;
+  }
+
+  .career-highlight{
+    font-size:13px;
+    line-height:1.7;
+  }
+
+  /* Footer */
+
+  footer p{
+    font-size:12px;
+    line-height:1.6;
+    padding:0 15px;
+    text-align:center;
+  }
+
+}
+
+/* ==========================
+   CAREER PAGE MOBILE FIX
+========================== */
+
+@media (max-width:768px){
+
+    .container-career{
+        width:95%;
+        max-width:100%;
+        padding:0 10px;
+    }
+
+    .section-title{
+        font-size:28px;
+        text-align:center;
+        line-height:1.3;
+    }
+
+    /* Hero */
+
+    .hero-stats{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:15px;
+        margin:25px 0;
+    }
+
+    .hero-stats div{
+        padding:15px;
+    }
+
+    .hero-stats h3{
+        font-size:28px;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero-buttons a{
+        width:100%;
+        text-align:center;
+    }
+
+    /* Timeline */
+
+    .career-timeline{
+        padding:0;
+    }
+
+    .timeline-item{
+        margin-bottom:25px;
+    }
+
+    .timeline-year{
+        font-size:20px;
+        margin-bottom:10px;
+        text-align:center;
+    }
+
+    .timeline-marker{
+        display:none;
+    }
+
+    /* Experience Card */
+
+    .experience-item{
+        padding:18px;
+        border-radius:14px;
+    }
+
+    .job-title{
+        font-size:18px;
+        line-height:1.4;
+    }
+
+    .company-details{
+         display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        gap:6px;
+        font-size:13px;
+    }
+
+    .company-logo{
+        width:32px;
+        height:auto;
+    }
+
+    .job-responsibilities{
+        padding-left:18px;
+        margin-top:15px;
+    }
+
+    .job-responsibilities li{
+        font-size:14px;
+        line-height:1.8;
+        margin-bottom:8px;
+    }
+
+    /* Fix Long Company Names */
+
+    .company-details strong{
+        word-break:break-word;
+    }
+
+    /* Headings */
+
+    h1{
+        font-size:32px !important;
+        line-height:1.3;
+    }
+
+    h2{
+        font-size:20px !important;
+        line-height:1.5;
+    }
+
+}
+
+.career-name{
+    text-align:center;
+    color:#D4AF37;
+}
+
+.career-role{
+    text-align:center;
+    color:#E5E4E2;
+}
+
+@media(max-width:768px){
+
+    .career-name{
+        font-size:32px;
+    }
+
+    .career-role{
+        font-size:18px;
+        line-height:1.6;
+        padding:0 10px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .career-timeline::before{
+        display:none;
+    }
+
+    .timeline-item{
+        display:block !important;
+        margin-bottom:25px;
+    }
+
+    .timeline-year{
+        display:block;
+        text-align:left;
+        font-size:20px;
+        margin-bottom:10px;
+        padding:0;
+    }
+
+    .timeline-marker{
+        display:none;
+    }
+
+    .experience-item{
+        width:100%;
+        box-sizing:border-box;
+    }
 }
